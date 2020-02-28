@@ -38,6 +38,7 @@ This workflow starts a local Geth instance and connects the [RPC Tester App](htt
 - Loading a packaged web app with `ethpkg` and serving it locally
 - Connecting a UI directly to RPC
 - Printing / managing Geth logs + colored output
+- keepAlive() API
 
 ## Ewasm Testnet
 
