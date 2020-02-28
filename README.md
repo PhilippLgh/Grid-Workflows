@@ -1,9 +1,48 @@
 # Grid Workflows
 
 This repository contains examples of Grid workflows.
-Each workflow in this repo showcases different API aspects and techniques to achieve advanced.
+Each workflow in this repo showcases different API aspects, concepts and techniques to achieve advanced infrastructure configurations in less than 10 lines of code.
 
-## Ewasm
+___
+
+## Block Explorer
+
+### Description
+This workflow starts a local Geth instance and configures the GraphQL API using the FlagBuilder.
+It then starts the [BlocksApp](https://github.com/marcgarreau/grid-blocks-app) by @marcgarreau which connects over HTTP to Geth.
+The Block Explorer can be used to learn more about the blockchain and explore and visualize blocks.
+More information available in blog post: ["Ethereum 101: What’s a Blockchain?"](https://medium.com/ethereum-grid/ethereum-101-whats-a-blockchain-5a1e925963d7)
+
+### Screenshots
+![BlocksApp screenshot](./block-explorer/screenshots/block_explorer.png)
+
+### Concepts:
+- Geth with GraphQL
+- Loading a packaged web app with `ethpkg` and serving it locally
+- Connecting a UI directly to a workflow binary over HTTP
+
+## RPC Tester
+
+### Description
+This workflow starts a local Geth instance and connects the [RPC Tester App](https://github.com/ryanio/grid-rpc-app) by @ryanio to it.
+
+### Screenshots
+![RPC Tester UI screenshot](./rpc-tester/screenshots/RPC_Tester_App.png)
+**RPC Tester UI**
+
+![RPC Tester CLI screenshot](./rpc-tester/screenshots/RPC_Tester_Workflow.png)
+**Workflow + Geth logs**
+
+### Concepts:
+- Geth with manual/raw flags (no FlagBuilder)
+- Loading a packaged web app with `ethpkg` and serving it locally
+- Connecting a UI directly to RPC
+- Printing / managing Geth logs + colored output
+
+## Ewasm Testnet
+
+### Description
+
 
 ### Description
 This workflow starts the Ewasm testnet in a Docker container, connects ethers.js to it and requests the `web3_clientVersion` over RPC.
@@ -14,23 +53,6 @@ This workflow starts the Ewasm testnet in a Docker container, connects ethers.js
   - docker entry point definition
   - binary as long running service
 - FlagBuilder with .docker()
-
-
-## Block Explorer
-
-### Description
-This workflow starts a local Geth instance and configures the GraphQL API using the FlagBuilder.
-It then starts the [BlocksApp](https://github.com/marcgarreau/grid-blocks-app) by @marcgarreau which connects over HTTP to Geth.
-The Block Explorer can be used to learn more about the blockchain and explore and visualize blocks.
-More information available on blog post: ["Ethereum 101: What’s a Blockchain?"](https://medium.com/ethereum-grid/ethereum-101-whats-a-blockchain-5a1e925963d7)
-
-### Screenshots
-![BlocksApp screenshot](./block-explorer/screenshots/block_explorer.png)
-
-### Concepts:
-- Geth with GraphQL
-- Loading a packaged web app
-- Connecting a UI directly to a workflow binary over HTTP
 
 ## REPL: Read–eval–print loop
 
