@@ -1,0 +1,25 @@
+{
+  "name": "ewasm",
+  "version": "1.0.0",
+  "description": "This workflow demonstrates how to use Dockerfiles to build binaries such as Ewasm and connect to a container.",
+  "repository": "https://github.com/PhilippLgh/Grid-Workflows",
+  "author": {
+    "name": "PhilippLgh",
+    "email": "philipp@ethereum.org"
+  },
+  "license": "MIT",
+  "grid": {
+    "version": "2.0.0",
+    "type": "type:workflow",
+    "tags": [
+      "workflow:tag:advanced",
+      "workflow:tag:dev",
+      "workflow:tag:experiment",
+      "workflow:tag:docker"
+    ]
+  },
+  "scripts": {
+    "start": "grid workflow run . --flags",
+    "release": "grid workflow publish ."
+  }
+}
