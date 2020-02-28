@@ -1,0 +1,24 @@
+{
+  "name": "ethers-repl",
+  "version": "1.0.0",
+  "description": "This workflow creates Read–eval–print loop (REPL) and executes ethers.js commands on a local Geth instance.",
+  "repository": "https://github.com/PhilippLgh/Grid-Workflows",
+  "author": {
+    "name": "PhilippLgh",
+    "email": "philipp@ethereum.org"
+  },
+  "license": "MIT",
+  "grid": {
+    "version": "2.0.0",
+    "type": "type:workflow",
+    "tags": [
+      "tag:workflow:beginner",
+      "tag:workflow:dev",
+      "tag:workflow:experiment"
+    ]
+  },
+  "scripts": {
+    "start": "grid workflow run . --flags",
+    "release": "grid workflow publish ."
+  }
+}
