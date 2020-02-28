@@ -1,0 +1,18 @@
+{
+  "name": "block-explorer",
+  "version": "1.0.0",
+  "description": "This workflow starts Geth with graphql flags and connects a visual block explorer to it.",
+  "grid": {
+    "version": "2.0.0",
+    "type": "type:workflow",
+    "tags": [
+      "tag:workflow:experiment",
+      "tag:workflow:beginner",
+      "tag:workflow:ui"
+    ]
+  },
+  "scripts": {
+    "start": "grid workflow run . --flags",
+    "publish": "grid workflow publish ."
+  }
+}
