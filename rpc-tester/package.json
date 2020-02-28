@@ -1,0 +1,26 @@
+{
+  "name": "rpc-tester",
+  "version": "1.0.0",
+  "description": "Starts a Geth client and UI to explore the RPC API",
+  "repository": "https://github.com/PhilippLgh/Grid-Workflows",
+  "author": {
+    "name": "PhilippLgh",
+    "email": "philipp@ethereum.org"
+  },
+  "license": "MIT",
+  "grid": {
+    "version": "2.0.0",
+    "type": "type:workflow",
+    "tags": [
+      "tag:workflow:beginner",
+      "tag:workflow:dev",
+      "tag:workflow:ui",
+      "tag:workflow:testnet",
+      "tag:workflow:experiment"
+    ]
+  },
+  "scripts": {
+    "start": "grid workflow run . --flags",
+    "release": "grid workflow publish ."
+  }
+}
