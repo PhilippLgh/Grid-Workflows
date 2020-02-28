@@ -21,7 +21,7 @@ const runConfig = {
 
 const run = async (config) => {
   logger.log('>> hello repl')
-  logger.log('run with config', config)
+  logger.log('>> run with config', config)
   const client = await grid.getClient(config.client, {
     version: config.version
   })
@@ -33,7 +33,7 @@ const run = async (config) => {
   logger.log('>> Received client version via RPC:', clientVersion)
 
   const ethereum = new ethers.providers.JsonRpcProvider(flags.getRpcAddressFull())
-  logger.log('using ethers: ', ethers.version)
+  logger.log('>> ethers.js: ', ethers.version)
   logger.log('Type something in this interactive ethers REPL')
   logger.log('Try: ethereum.getNetwork()')
 
