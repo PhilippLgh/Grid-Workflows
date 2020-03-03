@@ -1,0 +1,25 @@
+{
+  "name": "eth2-prysm-testnet",
+  "version": "1.0.0",
+  "description": "Become validator on prysm eth2 testnet",
+  "repository": "",
+  "author": {
+    "name": "PhilippLgh",
+    "email": "philipp@ethereum.org"
+  },
+  "license": "MIT",
+  "grid": {
+    "version": "2.0.0",
+    "type": "type:workflow",
+    "tags": [
+      "tag:workflow:advanced",
+      "tag:workflow:testnet",
+      "tag:workflow:utils",
+      "tag:workflow:docker"
+    ]
+  },
+  "scripts": {
+    "start": "grid-core workflow run . --flags",
+    "release": "grid-core workflow publish ."
+  }
+}
