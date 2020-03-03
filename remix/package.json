@@ -1,7 +1,7 @@
 {
-  "name": "eth2-prysm-testnet",
+  "name": "remix",
   "version": "1.0.0",
-  "description": "Become validator on prysm eth2 testnet",
+  "description": "This is the auto-generated test workflow.",
   "repository": "",
   "author": {
     "name": "PhilippLgh",
@@ -9,11 +9,18 @@
   },
   "license": "MIT",
   "grid": {
-    "version": "1.0.0",
+    "version": "0.5.0",
     "type": "type:workflow",
     "tags": [
+      "tag:workflow:dangerous",
+      "tag:workflow:beginner",
       "tag:workflow:advanced",
+      "tag:workflow:internal",
+      "tag:workflow:dev",
+      "tag:workflow:ui",
+      "tag:workflow:mainnet",
       "tag:workflow:testnet",
+      "tag:workflow:experiment",
       "tag:workflow:utils",
       "tag:workflow:docker"
     ]

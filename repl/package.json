@@ -9,7 +9,7 @@
   },
   "license": "MIT",
   "grid": {
-    "version": "2.0.0",
+    "version": "1.0.0",
     "type": "type:workflow",
     "tags": [
       "tag:workflow:beginner",
@@ -18,7 +18,7 @@
     ]
   },
   "scripts": {
-    "start": "grid workflow run . --flags",
-    "release": "grid workflow publish ."
+    "start": "grid-core workflow run . --flags",
+    "release": "grid-core workflow publish ."
   }
 }
