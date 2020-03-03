@@ -1,0 +1,23 @@
+{
+  "name": "hello-grid",
+  "version": "1.0.0",
+  "description": "This workflow only prints 'hello-grid'.",
+  "repository": "",
+  "author": {
+    "name": "PhilippLgh",
+    "email": "philipp@ethereum.org"
+  },
+  "license": "MIT",
+  "grid": {
+    "version": "1.0.0",
+    "type": "type:workflow",
+    "tags": [
+      "tag:workflow:beginner",
+      "tag:workflow:utils"
+    ]
+  },
+  "scripts": {
+    "start": "grid-core workflow run . --flags",
+    "release": "grid-core workflow publish ."
+  }
+}
