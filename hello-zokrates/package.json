@@ -1,0 +1,26 @@
+{
+  "name": "hello-zokrates",
+  "version": "1.0.0",
+  "description": "Runs the ZoKrates 'hello world' and exports the verifier.sol",
+  "repository": "",
+  "author": {
+    "name": "PhilippLgh",
+    "email": "philipp@ethereum.org"
+  },
+  "license": "MIT",
+  "grid": {
+    "version": "1.0.0",
+    "type": "type:workflow",
+    "tags": [
+      "tag:workflow:advanced",
+      "tag:workflow:dev",
+      "tag:workflow:experiment",
+      "tag:workflow:utils",
+      "tag:workflow:docker"
+    ]
+  },
+  "scripts": {
+    "start": "grid-core workflow run . --flags",
+    "release": "grid-core workflow publish ."
+  }
+}

@@ -20,7 +20,7 @@ const run = async (config) => {
   const zokrates = await grid.getClient('docker:dockerhub/zokrates/zokrates')
   // start the docker container
   // WARNING special docker syntax: likely to change
-  const ipc = await zokrates.start([] /*{ entryPoint: './zokrates', fs } */)
+  await grid.startClient(zokrates, [] /*, { entryPoint: './zokrates' }*/)
 
   // only use absolute paths! and no sync operations on mirrored fs
   // TODO await fs.writeFile()
